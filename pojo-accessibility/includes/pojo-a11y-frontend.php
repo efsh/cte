@@ -40,7 +40,7 @@ final class Pojo_A11y_Frontend {
 				'jquery',
 			),
 			'1.0.0',
-			true
+			false
 		);
 		
 
@@ -240,9 +240,10 @@ final class Pojo_A11y_Frontend {
 			</div>
 		</nav>
 		<div class="link-vlibras">
-			<img src="https://www.uerj.br/wp-content/themes/uerj/img/vlibras.gif">
+			<img src="<?php echo POJO_A11Y_ASSETS_URL; ?>images/vlibras.gif" alt="VLibras Logo" />
 			<span>Acessível na Língua Brasileira de Sinais (LIBRAS) <a target="_blank" href="http://www.vlibras.gov.br" role="link">VLibras</a></span>
 		</div>
+		
 		<?php
 	}
 

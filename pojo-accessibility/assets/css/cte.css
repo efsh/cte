@@ -33,6 +33,7 @@
 
 .link-vlibras.visivel{
 	visibility: visible;
+	z-index: 99999;
 }
 
 .logo-vlibras:hover + .link-vlibras, 
