@@ -26,7 +26,7 @@
 	visibility: hidden;
 	position: fixed;
 /* right: 15px; */
-	top: 45px;
+	top: 35px;
 	background-color: rgba(255,255,255);
 	overflow: auto;
 }
@@ -36,6 +36,7 @@
 	z-index: 99999;
 }
 
+/*
 .logo-vlibras:hover + .link-vlibras, 
 .logo-vlibras:active + .link-vlibras, 
 .logo-vlibras:focus + .link-vlibras, 
@@ -52,4 +53,4 @@
 	z-index: 8;
 	margin-right: -31px;
 }
-
+*/

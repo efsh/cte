@@ -130,10 +130,27 @@ final class Pojo_A11y_Frontend {
 			</div>
 			<div class="pojo-a11y-toolbar-overlay">
 				<div class="pojo-a11y-toolbar-inner">
+				
 					<p class="pojo-a11y-toolbar-title"><?php echo $toolbar_title; ?></p>
-					
+
+					<?php if ( $this->is_toolbar_button_active( 'VLibras' ) ) : ?>				
+						<div vw class="enabled" style="right: unset;top: unset;margin-top: 8px;">
+							<div vw-access-button class="active"></div>
+							<div vw-plugin-wrapper>
+								<div class="vw-plugin-top-wrapper"></div>
+							</div>
+						</div>
+
+						<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+						<script>
+							new window.VLibras.Widget('https://vlibras.gov.br/app');
+						</script>
+
+					<?php endif; ?>
+							
 					<ul class="pojo-a11y-toolbar-items pojo-a11y-tools">
-						<?php do_action( 'pojo_a11y_toolbar_before_buttons' ); ?>
+						<?php do_action( 'pojo_a11y_toolbar_before_buttons' ); ?>			
 						
 						<?php if ( $this->is_toolbar_button_active( 'VLibras' ) ) : ?>
 							<li class="pojo-a11y-toolbar-item">
